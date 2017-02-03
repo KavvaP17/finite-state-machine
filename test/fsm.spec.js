@@ -31,6 +31,7 @@ const config = {
     }
 };
 
+
 describe('FSM', () => {
     describe('#constructor', () => {
         it('throws an exception if config isn\'t passed', () => {
@@ -41,7 +42,6 @@ describe('FSM', () => {
     describe('#getState', () => {
         it('returns initial state after creation', () => {
             const student = new FSM(config);
-
             expect(student.getState()).to.equal('normal');
         });
     });
